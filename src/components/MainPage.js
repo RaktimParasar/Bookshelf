@@ -6,7 +6,7 @@ const MainPage = ({ booksCategory, books, bookChanger }) => {
     return ( 
         <div className="list-books">
             <div className="list-books-title">
-                <h1>MyReads</h1>
+                <h1><span role="img" aria-label="open_book">📖</span>  bookshelf</h1>
             </div>
             <div className="list-books-content">
         <div>

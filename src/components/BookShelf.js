@@ -6,7 +6,7 @@ const BookShelf = props => {
     const divideBooks = books.filter(book => book.shelf === category.key)
     return ( 
     <div className="bookshelf">
-        <h2 className="bookshelf-title">{category.name} <span>{divideBooks.length}</span></h2>
+        <h2 className="bookshelf-title">{category.name} <span className="badge">{divideBooks.length}</span></h2>
         <div className="bookshelf-books">
         <ol className="books-grid">
               {/* Book component goes here */}

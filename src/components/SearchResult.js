@@ -14,8 +14,11 @@ const SearchResult = ({ books, searchedBooks, bookChanger }) => {
     })
     return updatedBooks
     })
+
     return ( 
     <div className="search-books-results">
+    <h3>Search result showing <span className="badge">{searchedBooks.length}</span> books</h3>
+
         <ol className="books-grid">
           {/* Book goes here */}
         {

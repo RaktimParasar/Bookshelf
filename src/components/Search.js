@@ -4,6 +4,7 @@ import { Link } from 'react-router-dom';
 import SearchInput from './SearchInput';
 
 const Search = ({ books, searchedBooks, bookfinder, resetQuery, bookChanger }) => {
+    
     return(
         <div className="search-books">
             <div className="search-books-bar">

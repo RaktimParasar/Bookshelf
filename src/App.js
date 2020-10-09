@@ -35,9 +35,13 @@ class BooksApp extends Component {
   }
 
 
+
+
  //move books to diff category
   bookChanger = (book, category) => {
-    BooksAPI.update(book, category).catch(err => {
+    BooksAPI.update(book, category)
+    .then(() => category !== 'none' ? alert(`${book.title} is added successfully to shelf`) : null)
+    .catch(err => {
       console.log(err);
       this.setState({ error: true });
     });
